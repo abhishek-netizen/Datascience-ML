@@ -1,0 +1,39 @@
+Steps to work on Multilinear regression:
+----------------------------------------------------
+
+step1:Plot the scatter plot,Visualize the data. also try to Visualize the data with the help of hist,qqplot,boxplot
+      Try to find variance and standard deviations
+      have a look at summary of the dataset
+step2:Try to build The Linear Model of interest.
+step3:check for colinearity between the independent variables
+step4:Try to increase the model performamnce, by increasing R^2.
+---------------------------------------------------------
+Methods to increase R^2::
+Method1:Inorder to increase R^2, Remove the variables which are not influencing my target(dependent)Variable.
+Method2:Check for correlation between the Target variable and independent variable by using correlation matrix,
+and remove varibles which are not helping to increase R^2. build Linear model again.
+
+AltMethod1: We can also remove the variable by checking variation inflation factor
+by using function VIF() in R. The feature which is having more VIF value should be eliminatred.
+AltMethod2: One more method is also by using Akaike's information criterion(AIC), install package("MASS")
+and envoke its library
+and apply function StepAIC() "The model with less AIC" is the better model
+AltMethod3:if we used our lot of money and time in collecting the required data which satisifies our purpose or 
+we may have limited amount of data, in such cases..
+Removing the complete feature which is not influencing our target variable, is not a good idia!,
+so we decided to remove the rows (or the points) instead of removing the complete feature.
+which can be done with the help of cooks distance, visualize the cooks distance by writing 
+influence.measures(dataset)
+influenceIndexplot(dataset)
+influencePlot(dataset) #In cooks distance remove the datapoints which are greater than p=0.5
+
+AltMethod4: one more method is that by using stepwise linear regression. to learn visit the link below.
+
+           https://www.guru99.com/r-simple-multiple-linear-regression.html
+
+
+#contact: https://github.com/abhishek-netizen/Datascience-ML
+#thats all. ignore the grammar here.
+#Happy learning..
+
+

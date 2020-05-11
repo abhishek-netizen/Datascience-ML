@@ -26,7 +26,7 @@ dtree_predictions=dtree_model.predict(X_test)
 cm=confusion_matrix(y_test,dtree_predictions)
 cm
 accuracy =dtree_model.score(X_test, y_test)
-accuracy
+accuracy  #0.8947368421052632 
 
 
 # In[3]:
@@ -52,7 +52,7 @@ cm=confusion_matrix(y_test,svm_predictions)
 cm
 # model accuracy for X_test 
 accuracy=svm_model_linear.score(X_test,y_test)
-accuracy
+accuracy  #0.9736842105263158
 
 
 # In[4]:
@@ -80,7 +80,7 @@ knn_predictions=knn.predict(X_test)
 knn_predictions
 #confusion ,atrix
 cm=confusion_matrix(y_test,knn_predictions)
-cm
+cm  #0.9736842105263158
 
 
 # In[5]:
@@ -106,5 +106,5 @@ accuracy=gnb.score(X_test,y_test)
 print(accuracy)
 # creating a confusion matrix
 cm = confusion_matrix(y_test, gnb_predictions) 
-cm
+cm  #1.0
 

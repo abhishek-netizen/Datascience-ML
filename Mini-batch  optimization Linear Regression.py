@@ -120,7 +120,7 @@ print("Mean absolute error = ", error)
 
 # In[ ]:
 
-
+![](test/budha.png)
 
 
 

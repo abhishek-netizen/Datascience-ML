@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>AIR DELAY Prediction</title>
+  </head>
+
+  <body>
+
+    <style>
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2015/05/15/01/48/computer-767776_960_720.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+    <h1><div style="text-align:center"><font color="blue">Air Delay Prediction</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center">Enter The Input Values</div></h2>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+
+            <div class="form-group">
+              <label for="MONTH"><p class="font-weight-bold">MONTH</p></label>
+              <input type="text" name="MONTH">
+              <small id="MONTHHelp" class="form-text text-muted">Enter any value from 1 to 12 </small>
+              </div>
+
+              <div class="form-group">
+                <label for="DAY"><p class="font-weight-bold">DAY</p></label>
+                <input type="text" name="DAY">
+                <small id="DAYHelp" class="form-text text-muted">Enter any value from 1 to 31</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="DAY_OF_WEEK"><p class="font-weight-bold">DAY_OF_WEEK</p></label>
+                  <input type="text" name="DAY_OF_WEEK">
+                  <small id="DAY_OF_WEEKHelp" class="form-text text-muted">Enter any value from 1 to 7</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="AIRLINE"><p class="font-weight-bold">AIRLINE</p></label>
+                    <input type="text" name="AIRLINE">
+                    <small id="AIRLINEHelp" class="form-text text-muted">Enter any AIRLINE ID</small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="ORIGIN_AIRPORT"><p class="font-weight-bold">ORIGIN_AIRPORT</p></label>
+                      <input type="text" name="ORIGIN_AIRPORT">
+                      <small id="ORIGIN_AIRPORTHelp" class="form-text text-muted">Enter any ORIGIN_AIRPORT ID</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="DESTINATION_AIRPORT"><p class="font-weight-bold">DESTINATION_AIRPORT</p></label>
+                        <input type="text" name="DESTINATION_AIRPORT">
+                        <small id="DESTINATION_AIRPORTHelp" class="form-text text-muted">Enter any DESTINATION_AIRPORT ID</small>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="SCHEDULED_DEPARTURE"><p class="font-weight-bold">SCHEDULED_DEPARTURE</p></label>
+                          <input type="text" name="SCHEDULED_DEPARTURE">
+                          <small id="SCHEDULED_DEPARTUREHelp" class="form-text text-muted">Enter any SCHEDULED_DEPARTURE of flight</small>
+                          </div>
+
+                        <div class="form-group">
+                          <label for="DEPARTURE_TIME"><p class="font-weight-bold">DEPARTURE_TIME</p></label>
+                          <input type="text" name="DEPARTURE_TIME">
+                          <small id="DEPARTURE_TIMEHelp" class="form-text text-muted">Enter any DEPARTURE_TIME of flight</small>
+                          </div>
+
+                        <div class="form-group">
+                            <label for="SCHEDULED_ARRIVAL"><p class="font-weight-bold">SCHEDULED_ARRIVAL</p></label>
+                            <input type="text" name="SCHEDULED_ARRIVAL">
+                            <small id="SCHEDULED_ARRIVALHelp" class="form-text text-muted">Enter any SCHEDULED_ARRIVAL ID</small>
+                            </div>
+
+                         <div class="form-group">
+                            <label for="ARRIVAL_TIME"><p class="font-weight-bold">ARRIVAL_TIME</p></label>
+                            <input type="text" name="ARRIVAL_TIME">
+                            <small id="ARRIVAL_TIMEHelp" class="form-text text-muted">Enter any ARRIVAL_TIME of flight</small>
+                            </div>
+
+                            <div class="form-group">
+                               <label for="ARRIVAL_DELAY"><p class="font-weight-bold">ARRIVAL_DELAY</p></label>
+                               <input type="text" name="ARRIVAL_DELAY">
+                               <small id="ARRIVAL_DELAYHelp" class="form-text text-muted">Enter any ARRIVAL_DELAY of flight</small>
+                               </div>
+
+
+                          <div class="form-group">
+                              <label for="SCHEDULED_TIME"><p class="font-weight-bold">SCHEDULED_TIME</p></label>
+                              <input type="text" name="SCHEDULED_TIME">
+                              <small id="SCHEDULED_TIMEHelp" class="form-text text-muted">Enter SCHEDULED_TIME of flight </small>
+                              </div>
+
+                              <div class="form-group">
+                                  <label for="ELAPSED_TIME"><p class="font-weight-bold">ELAPSED_TIME</p></label>
+                                  <input type="text" name="ELAPSED_TIME">
+                                  <small id="ELAPSED_TIMEHelp" class="form-text text-muted">Enter ELAPSED_TIME of flight</small>
+                                  </div>
+
+                        <input class='btn btn-primary' type='submit' value='Submit'>
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
